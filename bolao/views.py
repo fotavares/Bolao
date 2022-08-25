@@ -38,7 +38,7 @@ def troca_senha(request):
 def dashboard(request):
     jogos = {}
     try:
-        rodada = Rodada.objects.all()
+        rodada = Rodada.objects.filter(permitirApostas=True)
         for r in rodada:
             partidas = Partida.objects.filter(
                 partidaRealizada=False, rodada=r.id)

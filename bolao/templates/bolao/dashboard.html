@@ -16,11 +16,13 @@
           {% csrf_token %}
 
           {% if not partida.usuario_apostou %}
+          {% if user.profile.pode_apostar %}
           <input type="hidden" value="{{ partida.timeCasa.nome }}" name="time-casa" id="time-casa" />
           <input type="hidden" value="{{ partida.timeCasa.id }}" name="casa-id" id="casa-id" />
           <input type="hidden" name="partidaID" id="partidaID" value="{{ partida.id }}" />
           <input type="hidden" value="{{ partida.timeVisitante.nome }}" name="time-visitante" id="time-visitante" />
           <input type="hidden" value="{{ partida.timeVisitante.id }}" name="visitante-id" id="visitante-id" />
+          {% endif %}
           {% endif %}
           <tr>
             <td style="vertical-align: middle; text-align: center;">
@@ -43,7 +45,9 @@
             </td>
           </tr>
           <tr class="lista-partida">
+
             {% if not partida.usuario_apostou %}
+            {% if user.profile.pode_apostar %}
             <td colspan="5" style="vertical-align: middle; text-align: center;">
               <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-success btn-novo butones">
@@ -62,12 +66,17 @@
               </div>
             </td>
             {% else %}
+            <td colspan="5" style="vertical-align: middle; text-align: center;">Saldo insuficiente para novas apostas.
+            </td>
+            {% endif %}
+            {% else %}
             <td colspan="5" style="vertical-align: middle; text-align: center;">
               <label class="btn btn-primary btn-novo">
                 {{partida.usuario_apostou_em}}
               </label>
             </td>
             {% endif %}
+
 
   </div>
   </tr>

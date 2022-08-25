@@ -131,6 +131,9 @@ class Profile(models.Model):
     def get_ordem(self):
         return self.objects.order_by('credito')
 
+    def pode_apostar(self):
+        return self.credito >= 5
+
 
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):
