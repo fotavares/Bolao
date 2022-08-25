@@ -1,0 +1,45 @@
+{% extends 'bolao/base.html' %}
+{% load static %}
+
+{% block title %}Bolão da Galera - Editar Perfil{% endblock %}
+
+{% block content %}
+
+<div class="news-post-widget">
+  <div class="news-post-detail">
+    <table class="table table-hover center">
+      <thead>
+        <tr aria-colspan="2">
+          <h4>Editar Perfil</h4>
+        </tr>
+        <tr>
+          <th style="vertical-align: middle; text-align: center;">Nome</th>
+          <th style="vertical-align: middle; text-align: center;">Créditos</th>
+          <th style="vertical-align: middle; text-align: center;">PIX</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for user in users %}
+        <tr>
+          <form action="" method="POST">
+            {% csrf_token %}
+            <input type="hidden" value="{{ user.id }}" name="user-id" id="time-visitante" />
+            <td style="vertical-align: middle; text-align: center;">{{user.username}}</td>
+            <td style="vertical-align: middle; text-align: center;">R$<input type="number"
+                value="{{user.profile.get_creditos}}" name="credito"> </td>
+            <td style="vertical-align: middle; text-align: center;"><input type="text" value="{{user.profile.pix}}"
+                name="pix"></td>
+            <td style="vertical-align: middle; text-align: center;">
+              <button type="submit" class="btn btn-success" value="Salvar">Salvar</button>
+            </td>
+          </form>
+        </tr>
+        {% endfor %}
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock content %}

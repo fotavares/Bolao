@@ -25,7 +25,7 @@ SECRET_KEY = 'aa8&pw3fx9jl$8#*%9yng__jn_$*&5!q-hr9cg2d*ocq7d%&3-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -121,7 +121,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/accounts/login'
+LOGIN_URL = '/conta/login'
 
-AUTH_PROFILE_MODULE = 'bolao.Apostador'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/conta/login'
+
+SIGNUP_REDIRECT_URL = '/'
+
+#AUTH_PROFILE_MODULE = 'bolao.Apostador'

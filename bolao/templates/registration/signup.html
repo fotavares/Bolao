@@ -1,0 +1,43 @@
+{% extends "registration/base.html" %}
+
+{% block title %}Cadastre-se{% endblock %}
+
+{% block content %}
+
+<h2 class="card-title text-center">Cadastro</h2>
+<form class="form-signin" method="POST">
+	{% csrf_token %}
+	<input type="hidden" name="next" value="{{ next }}">
+	<div class="form-label-group">
+		<input id="{{ form.username.id_for_label }}" maxlength="100" name="{{ form.username.html_name }}"
+			value="{{ form.username.value|default_if_none:"" }}" type="text" class="form-control" required
+			data-toggle="popover" data-placement="right" title="" data-content="{{form.username.help_text}}">
+		<label for="{{ form.username.id_for_label }}">Usuário</label>
+	</div>
+	<div class="form-label-group">
+		<input id="{{ form.password1.id_for_label }}" maxlength="100" name="{{ form.password1.html_name }}"
+			value="{{ form.password1.value|default_if_none:"" }}" type="password" class="form-control" required
+			data-toggle="popover" data-placement="right" data-content="{{form.password1.help_text}}" data-html="true">
+		<label for="{{ form.password1.id_for_label }}">Senha</label>
+
+	</div>
+	<div class="form-label-group">
+		<input id="{{ form.password2.id_for_label }}" maxlength="100" name="{{ form.password2.html_name }}"
+			value="{{ form.password2.value|default_if_none:"" }}" type="password" class="form-control" required
+			data-toggle="popover" data-placement="right" data-content="{{form.password2.help_text}}">
+		<label for="{{ form.password2.id_for_label }}">Confirmação de senha</label>
+	</div>
+	{% if form.errors %}
+	{% for field in form %}
+	{% for error in field.errors %}
+	<div class="alert alert-danger">
+		<strong>{{ error|escape }}</strong>
+	</div>
+	{% endfor %}
+	{% endfor %}
+	{% endif %}
+	<button class="btn btn-lg btn-dark btn-block text-uppercase" type="submit">Entrar</button>
+</form>
+
+
+{% endblock %}

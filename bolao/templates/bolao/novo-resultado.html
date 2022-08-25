@@ -1,0 +1,59 @@
+{% extends 'bolao/base.html' %}
+{% load static %}
+
+{% block title %}Bolão da Galera - Incluir Resultado{% endblock %}
+
+{% block content %}
+
+<div class="news-post-widget">
+  <div class="news-post-detail">
+    <table class="table table-hover center">
+      <thead>
+        <tr aria-colspan="2">
+          <h4>Inserir Resultado</h4>
+        </tr>
+        <tr>
+          <th style="vertical-align: middle; text-align: center;">Jogo</th>
+          <th style="vertical-align: middle; text-align: center;">Resultado</th>
+          <th style="vertical-align: middle; text-align: center;"></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for partida in partidas %}
+        <tr>
+          <form action="" method="POST">
+            {% csrf_token %}
+            <input type="hidden" value="{{ partida.id }}" name="partida-id" />
+            <td style="vertical-align: middle; text-align: center;">
+              {{ partida }} </td>
+            <td style="vertical-align: middle; text-align: center;">
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-success btn-novo butones">
+                  <input type="radio" name="vencedor" id="timeCasa" value="{{ partida.timeCasa.id }}"
+                    title="{{ partida.timeCasa.nome }}"> {{ partida.timeCasa.nome }}
+                </label>
+
+                <label class="btn btn-success btn-novo">
+                  <input type="radio" name="vencedor" id="empate" value="0">Empate
+                </label>
+
+                <label class="btn btn-success btn-novo">
+                  <input type="radio" name="vencedor" id="timeVisitante" value="{{ partida.timeVisitante.id }}"
+                    title="{{partida.timeVisitante.nome }}"> {{partida.timeVisitante.nome }}
+                </label>
+              </div>
+            </td>
+            <td style="vertical-align: middle; text-align: center;">
+              <button type="submit" class="btn btn-success" value="Salvar">Salvar</button>
+            </td>
+          </form>
+        </tr>
+        {% endfor %}
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock content %}

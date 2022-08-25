@@ -1,0 +1,170 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<!-- Site Metas -->
+<title>{% block title %}Bolao da Galera{% endblock %}</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Site Icons -->
+<link rel="shortcut icon" href="{% static 'favicon-32x32.png' %}" type="image/x-icon" />
+<link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<!-- Site CSS -->
+<!-- <link rel="stylesheet" href="{% static 'style.css' %}"> -->
+<!-- Colors CSS -->
+<link rel="stylesheet" href="{% static 'css/colors.css' %}">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="{% static 'css/versions.css' %}">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="{% static 'css/custom.css' %}">
+<!-- Flags CSS -->
+<link rel="stylesheet" href="{% static 'css/phoca-flags.css' %}">
+<!-- font family -->
+<link
+   href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+   rel="stylesheet">
+<!-- end font family -->
+<!-- <link rel="stylesheet" href="{% static 'css/3dslider.css' %}" /> -->
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<!-- <script src="{% static 'js/3dslider.js' %}"></script> -->
+</head>
+
+<body class="game_info" data-spy="scroll" data-target=".header">
+   <!-- LOADER -->
+   <div id="preloader">
+      <img class="preloader" src="{% static 'images/loading-img.gif' %}" alt="">
+   </div>
+   <!-- END LOADER -->
+
+   <section id="top">
+      <header>
+         <div class="container">
+            <div class="header-top">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="full">
+                        <div class="logo">
+                           <a href="{% url 'inicio' %}"><img src="{% static 'logo.png' %}" height="100" alt="#" /></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header-bottom">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="full">
+                        <div class="main-menu-section">
+                           <div class="menu">
+                              <nav class="navbar navbar-inverse">
+                                 <div class="navbar-header">
+                                    <button class="navbar-toggle" type="button" data-toggle="collapse"
+                                       data-target=".js-navbar-collapse">
+                                       <span class="sr-only">Toggle navigation</span>
+                                       <span class="icon-bar"></span>
+                                       <span class="icon-bar"></span>
+                                       <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="#">Menu</a>
+                                 </div>
+                                 <div class="collapse navbar-collapse js-navbar-collapse">
+                                    <ul class="nav navbar-nav">
+                                       <li class="active"><a href="{% url 'inicio' %}">Inicio</a></li>
+                                       <li><a href="{% url 'ranking' %}">Ranking</a></li>
+                                       <li><a href="{% url 'historico' %}">Histórico</a></li>
+                                       {% if user.is_authenticated %}
+                                       <li><a href="{% url 'trocasenha' %}">Trocar senha</a></li>
+                                       <li><a href="{% url 'sair' %}">Sair</a></li>
+                                       {% endif %}
+                                    </ul>
+                                 </div>
+                                 <!-- /.nav-collapse -->
+                              </nav>
+                              <div class="search-bar">
+                                 <div id="imaginary_container">
+                                    <div class="input-group stylish-input-group">
+                                       Usuário: {{ user.get_username }} - Créditos: R$ {{ user.profile.get_creditos }}
+                                       {% if user.is_staff %}<br />
+                                       <a href="{% url 'perfil' %}">Editar Perfis</a> |
+                                       <a href="{% url 'resultado' %}">Incluir Resultados</a>
+                                       {% endif %}
+                                       {% if user.is_superuser %}
+                                       | <a href='/admin' target='_blank'>Admin</a>
+                                       {% endif %}
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+   </section>
+
+   <!-- Conteudo todo  -->
+   <section id="contant" class="contant">
+      <div class="container">
+         <div class="row">
+            <!-- Lateral -->
+            {% if userswid or historicowid %}
+            <div class="col-lg-3 col-sm-3 col-xs-12">
+               {% if userswid %}
+               <aside id="sidebar" class="left-bar">
+                  {% include 'bolao/ranking-widget.html' %}
+
+               </aside>
+               {% endif %}
+               {% if historicowid %}
+               <aside id="sidebar" class="left-bar">
+                  {% include 'bolao/historico-widget.html' %}
+
+               </aside>
+               {% endif %}
+            </div>
+            {% endif %}
+            <!-- Fim Lateral  -->
+            <!-- Centro -->
+            {% if userswid or historicowid %}
+            <div class="col-lg-9 col-sm-9 col-xs-12">
+               {% else %}
+               <div class="col-lg-12 col-sm-12 col-xs-12">
+                  {% endif %}
+                  <div class="news-post-holder">
+                     {% block content %}
+                     {% endblock %}
+                  </div>
+               </div>
+               <!-- Fim Centro -->
+            </div>
+         </div>
+   </section>
+
+   <footer id="footer" class="footer">
+      <div class="footer-bottom">
+         <div class="container">
+            <p>Copyright © 2018 <a href="https://themewagon.com/" target="_blank">ThemeWagon</a> - Alterado por Felipe
+               Tavares</p>
+         </div>
+      </div>
+   </footer>
+   <a href="#home" data-scroll class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+   <!-- ALL JS FILES -->
+   <script src="{% static 'js/all.js' %}"></script>
+   <!-- ALL PLUGINS -->
+   <script src="{% static 'js/custom.js' %}"></script>
+</body>
+
+</html>

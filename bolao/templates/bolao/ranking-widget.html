@@ -1,0 +1,22 @@
+{% load static %}
+<div class="feature-matchs">
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr aria-colspan="2">
+        <h4>Top 5 Jogadores</h4>
+      </tr>
+      <tr>
+        <th>Nome</th>
+        <th>Créditos</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for user in userswid %}
+      <tr>
+        <td>{{user.username}}</td>
+        <td>R${{user.profile.get_creditos}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

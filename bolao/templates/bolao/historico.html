@@ -1,0 +1,53 @@
+{% extends 'bolao/base.html' %}
+{% load static %}
+
+{% block title %}Bolão da Galera - Histórico dos Jogos{% endblock %}
+
+{% block content %}
+
+<!-- <h2>Histórico dos jogos </h2> -->
+
+
+
+
+
+<div class="news-post-widget">
+	<div class="news-post-detail">
+		<table class="table table-hover center">
+			<thead>
+				<tr aria-colspan="7">
+					<h4>Histórico dos Jogos</h4>
+				</tr>
+			</thead>
+			<tbody>
+				{% for resultado in historico %}
+				<tr>
+					<td style="vertical-align: middle; text-align: center;">{{ resultado.partida.rodada.nome }}</td>
+					<td style="vertical-align: middle; text-align: center;">
+						<div style="vertical-align: middle; text-align: center;" class="flag">
+							<div class="{{ resultado.partida.timeCasa.get_flag }}"></div>
+						</div>
+					</td>
+					<td style="vertical-align: middle; text-align: center;" class="{{resultado.get_class_casa}}">
+						{{resultado.partida.timeCasa.nome }}</td>
+					<td style="vertical-align: middle; text-align: center;"></td>
+					<td style="vertical-align: middle; text-align: center;">VS</td>
+
+					<td style="vertical-align: middle; text-align: center;"></td>
+					<td style="vertical-align: middle; text-align: center;" class="{{resultado.get_class_visitante}}">
+						{{resultado.partida.timeVisitante.nome }}
+					</td>
+					<td style="vertical-align: middle; text-align: center;">
+						<div style="vertical-align: middle; text-align: center;" class="flag">
+							<div class="flag {{ resultado.partida.timeVisitante.get_flag }}"></div>
+						</div>
+					</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% load static %}
+
+
+
+<div class="content-widget top-story">
+	<div class="top-stroy-header">
+		<h2>Histórico dos jogos </h2>
+		<span class="date"></span>
+	</div>
+	<ul class="other-stroies">
+		{% for resultado in historicowid %}
+		<li><span class="{{resultado.get_class_casa}}">{{ resultado.partida.timeCasa.nome }}</span> X <span
+				class="{{resultado.get_class_visitante}}">{{resultado.partida.timeVisitante.nome }}</span></li>
+
+		{% endfor %}
+	</ul>
+</div>
