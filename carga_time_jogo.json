@@ -1,0 +1,1199 @@
+[
+	{
+		"model": "bolao.time",
+		"pk": 1,
+		"fields": {
+			"nome": "Brasil",
+			"brasao": "cbf.jpg"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 2,
+		"fields": {
+			"nome": "Bélgica",
+			"brasao": "belg.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 3,
+		"fields": {
+			"nome": "Arábia Saudita",
+			"brasao": "arabia.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 4,
+		"fields": {
+			"nome": "Argentina",
+			"brasao": "argentina_new.jpg"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 5,
+		"fields": {
+			"nome": "Austrália",
+			"brasao": "australia_new.jpg"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 6,
+		"fields": {
+			"nome": "Camarões",
+			"brasao": "camaroenew.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 7,
+		"fields": {
+			"nome": "Canadá",
+			"brasao": "canada.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 8,
+		"fields": {
+			"nome": "Costa Rica",
+			"brasao": "costarica.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 9,
+		"fields": {
+			"nome": "Croácia",
+			"brasao": "croatia.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 10,
+		"fields": {
+			"nome": "Dinamarca",
+			"brasao": "dina.gif"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 11,
+		"fields": {
+			"nome": "Equador",
+			"brasao": "ecu.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 12,
+		"fields": {
+			"nome": "Inglaterra",
+			"brasao": "eng_new.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 13,
+		"fields": {
+			"nome": "França",
+			"brasao": "fra.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 14,
+		"fields": {
+			"nome": "Alemanha",
+			"brasao": "ger.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 15,
+		"fields": {
+			"nome": "Gana",
+			"brasao": "ghana.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 16,
+		"fields": {
+			"nome": "Holanda",
+			"brasao": "holland2.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 17,
+		"fields": {
+			"nome": "Irã",
+			"brasao": "iran.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 18,
+		"fields": {
+			"nome": "Japão",
+			"brasao": "japao.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 19,
+		"fields": {
+			"nome": "Marrocos",
+			"brasao": "marrocos_new.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 20,
+		"fields": {
+			"nome": "México",
+			"brasao": "mexico.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 21,
+		"fields": {
+			"nome": "Polonia",
+			"brasao": "polonia.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 22,
+		"fields": {
+			"nome": "Portugal",
+			"brasao": "port.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 23,
+		"fields": {
+			"nome": "Catar",
+			"brasao": "qatar.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 24,
+		"fields": {
+			"nome": "Senegal",
+			"brasao": "senegal.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 25,
+		"fields": {
+			"nome": "Sérvia",
+			"brasao": "serbia.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 26,
+		"fields": {
+			"nome": "Coréia do Sul",
+			"brasao": "skorea.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 27,
+		"fields": {
+			"nome": "Espanha",
+			"brasao": "spa.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 28,
+		"fields": {
+			"nome": "Suiça",
+			"brasao": "suica.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 29,
+		"fields": {
+			"nome": "Tunísia",
+			"brasao": "tunisia.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 30,
+		"fields": {
+			"nome": "Uruguai",
+			"brasao": "uru.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 31,
+		"fields": {
+			"nome": "Estados Unidos",
+			"brasao": "usa_new.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 32,
+		"fields": {
+			"nome": "País de Gales",
+			"brasao": "wales.png"
+		}
+	},
+	{
+		"model": "bolao.time",
+		"pk": 33,
+		"fields": {
+			"nome": "Empate",
+			"brasao": "-"
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 1,
+		"fields": {
+			"rodada": 1,
+			"nome": "Grupo A - Rodada 1",
+			"permitirApostas": true
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 2,
+		"fields": {
+			"rodada": 2,
+			"nome": "Grupo A - Rodada 2",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 3,
+		"fields": {
+			"rodada": 3,
+			"nome": "Grupo A - Rodada 3",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 4,
+		"fields": {
+			"rodada": 4,
+			"nome": "Grupo B - Rodada 1",
+			"permitirApostas": true
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 5,
+		"fields": {
+			"rodada": 5,
+			"nome": "Grupo B - Rodada 2",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 6,
+		"fields": {
+			"rodada": 6,
+			"nome": "Grupo B - Rodada 3",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 7,
+		"fields": {
+			"rodada": 7,
+			"nome": "Grupo C - Rodada 1",
+			"permitirApostas": true
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 8,
+		"fields": {
+			"rodada": 8,
+			"nome": "Grupo C - Rodada 2",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 9,
+		"fields": {
+			"rodada": 9,
+			"nome": "Grupo C - Rodada 3",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 10,
+		"fields": {
+			"rodada": 10,
+			"nome": "Grupo D - Rodada 1",
+			"permitirApostas": true
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 11,
+		"fields": {
+			"rodada": 11,
+			"nome": "Grupo D - Rodada 2",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 12,
+		"fields": {
+			"rodada": 12,
+			"nome": "Grupo D - Rodada 3",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 13,
+		"fields": {
+			"rodada": 13,
+			"nome": "Grupo E - Rodada 1",
+			"permitirApostas": true
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 14,
+		"fields": {
+			"rodada": 14,
+			"nome": "Grupo E - Rodada 2",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 15,
+		"fields": {
+			"rodada": 15,
+			"nome": "Grupo E - Rodada 3",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 16,
+		"fields": {
+			"rodada": 16,
+			"nome": "Grupo F - Rodada 1",
+			"permitirApostas": true
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 17,
+		"fields": {
+			"rodada": 17,
+			"nome": "Grupo F - Rodada 2",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 18,
+		"fields": {
+			"rodada": 18,
+			"nome": "Grupo F - Rodada 3",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 19,
+		"fields": {
+			"rodada": 19,
+			"nome": "Grupo G - Rodada 1",
+			"permitirApostas": true
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 20,
+		"fields": {
+			"rodada": 20,
+			"nome": "Grupo G - Rodada 2",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 21,
+		"fields": {
+			"rodada": 21,
+			"nome": "Grupo G -  Rodada 3",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 22,
+		"fields": {
+			"rodada": 22,
+			"nome": "Grupo H - Rodada 1",
+			"permitirApostas": true
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 23,
+		"fields": {
+			"rodada": 23,
+			"nome": "Grupo H - Rodada 2",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 24,
+		"fields": {
+			"rodada": 24,
+			"nome": "Grupo H - Rodada 3",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 25,
+		"fields": {
+			"rodada": 25,
+			"nome": "Oitavas de Final",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 26,
+		"fields": {
+			"rodada": 26,
+			"nome": "Quartas de Final",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 27,
+		"fields": {
+			"rodada": 27,
+			"nome": "Semi Final",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 28,
+		"fields": {
+			"rodada": 28,
+			"nome": "Terceiro Lugar",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.rodada",
+		"pk": 29,
+		"fields": {
+			"rodada": 29,
+			"nome": "Final",
+			"permitirApostas": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 1,
+		"fields": {
+			"rodada": 1,
+			"timeCasa": 23,
+			"timeVisitante": 11,
+			"title": "-",
+			"dataPartida": "2022-11-20T16:00:00Z",
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 2,
+		"fields": {
+			"rodada": 1,
+			"timeCasa": 24,
+			"timeVisitante": 16,
+			"title": "-",
+			"dataPartida": "2022-11-21T16:00:00Z",
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 3,
+		"fields": {
+			"rodada": 4,
+			"timeCasa": 12,
+			"timeVisitante": 17,
+			"title": "-",
+			"dataPartida": "2022-11-21T13:00:00Z",
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 4,
+		"fields": {
+			"rodada": 4,
+			"timeCasa": 31,
+			"timeVisitante": 32,
+			"title": "-",
+			"dataPartida": "2022-11-21T19:00:00Z",
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 5,
+		"fields": {
+			"rodada": 7,
+			"timeCasa": 4,
+			"timeVisitante": 3,
+			"title": "-",
+			"dataPartida": "2022-11-22T10:00:00Z",
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 6,
+		"fields": {
+			"rodada": 7,
+			"timeCasa": 20,
+			"timeVisitante": 21,
+			"title": "-",
+			"dataPartida": "2022-11-22T16:00:00Z",
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 7,
+		"fields": {
+			"rodada": 10,
+			"timeCasa": 10,
+			"timeVisitante": 29,
+			"title": "-",
+			"dataPartida": "2022-11-22T13:00:00Z",
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 8,
+		"fields": {
+			"rodada": 10,
+			"timeCasa": 13,
+			"timeVisitante": 5,
+			"title": "-",
+			"dataPartida": "2022-11-22T19:00:00Z",
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 9,
+		"fields": {
+			"rodada": 13,
+			"timeCasa": 14,
+			"timeVisitante": 18,
+			"title": "-",
+			"dataPartida": "2022-11-23T13:00:00Z",
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 10,
+		"fields": {
+			"rodada": 13,
+			"timeCasa": 27,
+			"timeVisitante": 8,
+			"title": "-",
+			"dataPartida": "2022-11-23T16:00:00Z",
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 11,
+		"fields": {
+			"rodada": 16,
+			"timeCasa": 19,
+			"timeVisitante": 9,
+			"title": "-",
+			"dataPartida": "2022-11-23T10:00:00Z",
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 12,
+		"fields": {
+			"rodada": 16,
+			"timeCasa": 2,
+			"timeVisitante": 7,
+			"title": "-",
+			"dataPartida": "2022-11-23T19:00:00Z",
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 13,
+		"fields": {
+			"rodada": 19,
+			"timeCasa": 28,
+			"timeVisitante": 6,
+			"title": "-",
+			"dataPartida": "2022-11-24T10:00:00Z",
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 14,
+		"fields": {
+			"rodada": 19,
+			"timeCasa": 1,
+			"timeVisitante": 25,
+			"title": "-",
+			"dataPartida": "2022-11-24T19:00:00Z",
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 15,
+		"fields": {
+			"rodada": 22,
+			"timeCasa": 30,
+			"timeVisitante": 26,
+			"title": "-",
+			"dataPartida": "2022-11-24T13:00:00Z",
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 16,
+		"fields": {
+			"rodada": 22,
+			"timeCasa": 22,
+			"timeVisitante": 15,
+			"title": "-",
+			"dataPartida": "2022-11-24T16:00:00Z",
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 17,
+		"fields": {
+			"rodada": 2,
+			"timeCasa": 23,
+			"timeVisitante": 24,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 18,
+		"fields": {
+			"rodada": 2,
+			"timeCasa": 16,
+			"timeVisitante": 11,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 19,
+		"fields": {
+			"rodada": 5,
+			"timeCasa": 32,
+			"timeVisitante": 17,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 20,
+		"fields": {
+			"rodada": 5,
+			"timeCasa": 12,
+			"timeVisitante": 31,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 21,
+		"fields": {
+			"rodada": 8,
+			"timeCasa": 21,
+			"timeVisitante": 3,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 22,
+		"fields": {
+			"rodada": 8,
+			"timeCasa": 4,
+			"timeVisitante": 20,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 23,
+		"fields": {
+			"rodada": 11,
+			"timeCasa": 29,
+			"timeVisitante": 5,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 24,
+		"fields": {
+			"rodada": 11,
+			"timeCasa": 13,
+			"timeVisitante": 10,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 25,
+		"fields": {
+			"rodada": 14,
+			"timeCasa": 18,
+			"timeVisitante": 8,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 26,
+		"fields": {
+			"rodada": 14,
+			"timeCasa": 27,
+			"timeVisitante": 14,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 27,
+		"fields": {
+			"rodada": 17,
+			"timeCasa": 2,
+			"timeVisitante": 19,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 28,
+		"fields": {
+			"rodada": 17,
+			"timeCasa": 9,
+			"timeVisitante": 7,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 29,
+		"fields": {
+			"rodada": 20,
+			"timeCasa": 6,
+			"timeVisitante": 25,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 30,
+		"fields": {
+			"rodada": 23,
+			"timeCasa": 22,
+			"timeVisitante": 30,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 31,
+		"fields": {
+			"rodada": 20,
+			"timeCasa": 1,
+			"timeVisitante": 28,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 32,
+		"fields": {
+			"rodada": 23,
+			"timeCasa": 26,
+			"timeVisitante": 15,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 33,
+		"fields": {
+			"rodada": 3,
+			"timeCasa": 11,
+			"timeVisitante": 24,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 34,
+		"fields": {
+			"rodada": 3,
+			"timeCasa": 16,
+			"timeVisitante": 23,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 35,
+		"fields": {
+			"rodada": 6,
+			"timeCasa": 17,
+			"timeVisitante": 31,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 36,
+		"fields": {
+			"rodada": 6,
+			"timeCasa": 32,
+			"timeVisitante": 12,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 37,
+		"fields": {
+			"rodada": 9,
+			"timeCasa": 21,
+			"timeVisitante": 4,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 38,
+		"fields": {
+			"rodada": 9,
+			"timeCasa": 3,
+			"timeVisitante": 20,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 39,
+		"fields": {
+			"rodada": 12,
+			"timeCasa": 29,
+			"timeVisitante": 13,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 40,
+		"fields": {
+			"rodada": 12,
+			"timeCasa": 5,
+			"timeVisitante": 10,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 41,
+		"fields": {
+			"rodada": 15,
+			"timeCasa": 18,
+			"timeVisitante": 27,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 42,
+		"fields": {
+			"rodada": 15,
+			"timeCasa": 8,
+			"timeVisitante": 14,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 43,
+		"fields": {
+			"rodada": 18,
+			"timeCasa": 9,
+			"timeVisitante": 2,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 44,
+		"fields": {
+			"rodada": 18,
+			"timeCasa": 7,
+			"timeVisitante": 19,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 45,
+		"fields": {
+			"rodada": 21,
+			"timeCasa": 25,
+			"timeVisitante": 28,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 46,
+		"fields": {
+			"rodada": 21,
+			"timeCasa": 6,
+			"timeVisitante": 1,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 47,
+		"fields": {
+			"rodada": 24,
+			"timeCasa": 26,
+			"timeVisitante": 22,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	},
+	{
+		"model": "bolao.partida",
+		"pk": 48,
+		"fields": {
+			"rodada": 24,
+			"timeCasa": 15,
+			"timeVisitante": 30,
+			"title": "-",
+			"dataPartida": null,
+			"premiacao": 0.0,
+			"partidaRealizada": false,
+			"premiacaoDistribuida": false
+		}
+	}
+]

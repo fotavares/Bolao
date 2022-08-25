@@ -56,10 +56,10 @@ def dashboard(request):
                            'mostrar': len(list(partidas))}
 
         historico = Resultado.objects.get_queryset()[0:5]
-        users = User.objects.order_by('-profile__credito')[0:5]
+        users = User.objects.order_by('-profile__qtde_vitorias')[0:5]
 
     except Rodada.DoesNotExist:
-        rodada = "Sem partidas para apostar por enquanto!"
+        pass
     return render(request, 'bolao/dashboard.html', {'jogos': jogos, 'historicowid': historico, 'userswid': users})
 
 
@@ -68,6 +68,11 @@ def historico(request):
     historico = Resultado.objects.get_queryset()
     return render(request, 'bolao/historico.html', {'historico': historico})
 
+
+@login_required
+def regras(request):
+
+    return render(request, 'bolao/regras.html')
 
 # @login_required
 # def aposta(request, pk):

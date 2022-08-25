@@ -107,6 +107,7 @@ class Apostas(models.Model):
     def atualizar(self, userId):
         profile = Profile.objects.get(user=userId)
         profile.credito = profile.credito - 5
+        profile.qtde_apostas = profile.qtde_apostas + 1
         #profile.apostou = True
         profile.save()
         partida = self.partida
@@ -123,7 +124,8 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     credito = models.FloatField(default=0.00)
     pix = models.TextField(null=True, default='')
-    #apostou = models.BooleanField(default=False)
+    qtde_apostas = models.IntegerField(default=0)
+    qtde_vitorias = models.IntegerField(default=0)
 
     def get_creditos(self):
         return f"{self.credito:,.2f}"
@@ -179,22 +181,21 @@ def create_resultado(sender, instance, created, **kwargs):
         for aposta in apostas:
             usuario = User.objects.get(id=aposta.usuario.id)
             usuario.profile.credito = usuario.profile.credito + partida.premiacao
-            #usuario.profile.apostou = False
+            usuario.profile.qtde_vitorias = usuario.profile.qtde_vitorias + 1
             usuario.save()
-    elif (apostas.count() > 3):
+    elif (apostas.count() > 1):
         premio = partida.premiacao
         premio = premio / apostas.count()
         for aposta in apostas:
             usuario = User.objects.get(id=aposta.usuario.id)
             usuario.profile.credito = usuario.profile.credito + premio
-            #usuario.profile.apostou = False
+            usuario.profile.qtde_vitorias = usuario.profile.qtde_vitorias + 1
             usuario.save()
     else:
         apostas = Apostas.objects.filter(partida=instance.partida.id)
         for aposta in apostas:
             usuario = User.objects.get(id=aposta.usuario.id)
             usuario.profile.credito = usuario.profile.credito + aposta.valor_aposta
-            #usuario.profile.apostou = False
             usuario.save()
     partida.premiacaoDistribuida = True
     partida.save()
@@ -210,6 +211,7 @@ def create_resultado(sender, instance, created, **kwargs):
 def create_aposta(sender, instance, created, **kwargs):
     profile = Profile.objects.get(user=instance.usuario_id)
     profile.credito = profile.credito - 5
+    profile.qtde_apostas = profile.qtde_apostas + 1
     #profile.apostou = True
     profile.save()
     partida = Partida.objects.get(id=instance.partida_id)

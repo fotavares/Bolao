@@ -10,6 +10,7 @@ urlpatterns = [
     path('ranking', views.ranking, name='ranking'),
     path('historico', views.historico, name='historico'),
     path('resultado', views.resultado, name='resultado'),
+    path('regras', views.regras, name="regras"),
     path("cadastro", views.SignUpView.as_view(), name="cadastro"),
     path('conta/login', auth_views.LoginView.as_view(), name='login'),
     path('conta/troca-senha',
