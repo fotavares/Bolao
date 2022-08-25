@@ -43,10 +43,8 @@
             </td>
           </tr>
           <tr class="lista-partida">
-            <td></td>
-            <td></td>
             {% if not partida.usuario_apostou %}
-            <td style="vertical-align: middle; text-align: center;">
+            <td colspan="5" style="vertical-align: middle; text-align: center;">
               <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-success btn-novo butones">
                   <input type="radio" name="aposta" id="timeCasa" value="{{ partida.timeCasa.id }}"
@@ -64,14 +62,13 @@
               </div>
             </td>
             {% else %}
-            <td style="vertical-align: middle; text-align: center;">
+            <td colspan="5" style="vertical-align: middle; text-align: center;">
               <label class="btn btn-primary btn-novo">
                 {{partida.usuario_apostou_em}}
               </label>
             </td>
             {% endif %}
-            <td></td>
-            <td></td>
+
   </div>
   </tr>
 
